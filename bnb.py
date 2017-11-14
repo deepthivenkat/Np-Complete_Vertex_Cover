@@ -43,7 +43,7 @@ startTime: start time used in timing. timeOut: user input to decide when to exit
 '''   
 def bnb(v, index, result, thisG, minSoFar, startTime, timeOut, outputFile, traceFile):
 
-	# if timeout, output and exit.
+    # if timeout, output and exit.
     if time() - startTime > timeOut:
         outputFile.write(str(len(minSoFar)))
         outputFile.write("\n")
@@ -66,7 +66,7 @@ def bnb(v, index, result, thisG, minSoFar, startTime, timeOut, outputFile, trace
 
     # further our result to all nest node
     for i in range(index, v + 1):
-    	# prune if the node is useless
+        # prune if the node is useless
         if i not in thisG.nodes():
             continue
         # recursion
@@ -113,6 +113,10 @@ def main():
         with open(traceFileName, "w") as traceFile:
             try:
                 bnb(v, index, result, G, minSoFar, startTime, timeOut, outputFile, traceFile)
+		outputFile.write(str(len(minSoFar)))
+                outputFile.write("\n")
+                outputFile.write(",".join(map(lambda x : str(x), minSoFar)))
+                outputFile.write("\n")
             except RuntimeError:
                 print "Timeout. Returned best solution so far."
     traceFile.close()
