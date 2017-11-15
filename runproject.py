@@ -33,9 +33,9 @@ if (args.alg == 'BnB'):
 
 elif (args.alg == 'Approx'):
     clipinst = args.inst
-    sol = approx.MVC_approx(G)
+    sol,trace = approx.MVC_approx(G)
     outputsol = '%s_%s.sol' % (clipinst[:-6], args.alg)
-    outputtrace = '%s_%s.trace' % (args.inst, args.alg)
+    outputtrace = '%s_%s.trace' % (clipinst[:-6], args.alg)
     output1 = open(outpath + outputsol,'w')
     output1.write(str(len(sol))+"\n")
     solstring = ""
@@ -43,6 +43,9 @@ elif (args.alg == 'Approx'):
         solstring += str(i) + ","
     output1.write(solstring)
     output1.close()
+    output2 = open(outpath + outputtrace,'w')
+    output2.write(trace)
+    output2.close()
 
 elif (args.alg =='LS1'):
     sys.exit('Error')
