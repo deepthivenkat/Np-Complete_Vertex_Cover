@@ -1,0 +1,1 @@
+Run main.tex with pdfLaTeX, BibTeX, pdfLaTeX, pdfLaTeX in sequence.
