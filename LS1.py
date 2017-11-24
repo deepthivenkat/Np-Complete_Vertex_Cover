@@ -108,7 +108,7 @@ def Local_Search(G, vertex_count=0, edge_count=0):
 
 
 
-
+"""
 f = open("star.graph")
 G = nx.Graph()
 V_E_D = f.readline()
@@ -121,5 +121,5 @@ for idx,line in enumerate(f):
 		G.add_edges_from(zip(source_edges,adj_edges))
 VC_LS = Local_Search(G,Vertices,Edges)
 print VC_LS,len(VC_LS)
-
+"""
 
