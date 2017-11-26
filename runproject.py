@@ -59,7 +59,7 @@ elif (args.alg == 'Approx'):
     solstring = ""
     for i in sol:
         solstring += str(i) + ","
-    output1.write(solstring)
+    output1.write(solstring[:-1])
     output1.close()
     output2 = open(outpath + outputtrace,'w')
     output2.write(trace)
@@ -67,19 +67,19 @@ elif (args.alg == 'Approx'):
 
 elif (args.alg =='LS1'):
     clipinst = args.inst
-    sol = LS1.Local_Search(G)
-    outputsol = '%s_%s.sol' % (clipinst[:-6], args.alg)
-    #outputtrace = '%s_%s.trace' % (clipinst[:-6], args.alg)
+    lsol, sol, trace = LS1.Local_Search(G, args.time)
+    outputsol = '%s_%s_%s.sol' % (clipinst[:-6], args.alg, args.time)
+    outputtrace = '%s_%s_%s.trace' % (clipinst[:-6], args.alg, args.time)
     output1 = open(outpath + outputsol,'w')
     output1.write(str(len(sol))+"\n")
     solstring = ""
     for i in sol:
         solstring += str(i) + ","
-    output1.write(solstring)
+    output1.write(solstring[:-1])
     output1.close()
-    #output2 = open(outpath + outputtrace,'w')
-    #output2.write(trace)
-    #output2.close()
+    output2 = open(outpath + outputtrace,'w')
+    output2.write(trace)
+    output2.close()
 
 elif (args.alg == 'LS2'):
     sys.exit('Error')
