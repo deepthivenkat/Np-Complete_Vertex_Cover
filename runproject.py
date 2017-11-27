@@ -67,23 +67,30 @@ elif (args.alg == 'Approx'):
 
 elif (args.alg =='LS1'):
     clipinst = args.inst
-    lsol, sol, trace = LS1.Local_Search(G, args.time)
-    outputsol = '%s_%s_%s.sol' % (clipinst[:-6], args.alg, args.time)
-    outputtrace = '%s_%s_%s.trace' % (clipinst[:-6], args.alg, args.time)
+    # LS1.Local_Search(G, args.time)
+    sol,trace = LS1.Local_Search(G, args.time)
+    outputsol = '%s_%s_%s_%s.sol' % (clipinst[:-6], args.alg,str(int(args.time)),str(int(args.seed)))
+    outputtrace = '%s_%s_%s_%s.trace' % (clipinst[:-6], args.alg,str(int(args.time)),str(int(args.seed)))
     output1 = open(outpath + outputsol,'w')
-    output1.write(str(len(sol))+"\n")
-    solstring = ""
-    for i in sol:
-        solstring += str(i) + ","
-    output1.write(solstring[:-1])
+    # output1.write(str(len(sol))+"\n")
+    output1.write(sol)
     output1.close()
     output2 = open(outpath + outputtrace,'w')
     output2.write(trace)
     output2.close()
-
 elif (args.alg == 'LS2'):
-    sys.exit('Error')
-
+    clipinst = args.inst
+    # LS1.Local_Search(G, args.time)
+    sol,trace = LS2.Local_Search(G, args.time)
+    outputsol = '%s_%s_%s_%s.sol' % (clipinst[:-6], args.alg,str(int(args.time)),str(int(args.seed)))
+    outputtrace = '%s_%s_%s_%s.trace' % (clipinst[:-6], args.alg,str(int(args.time)),str(int(args.seed)))
+    output1 = open(outpath + outputsol,'w')
+    # output1.write(str(len(sol))+"\n")
+    output1.write(sol)
+    output1.close()
+    output2 = open(outpath + outputtrace,'w')
+    output2.write(trace)
+    output2.close()
 else:
     sys.exit('Error')
 
