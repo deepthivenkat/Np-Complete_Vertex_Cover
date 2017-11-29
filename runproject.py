@@ -49,8 +49,8 @@ G = makegraph(args.inst)
 if (args.alg == 'BnB'):
     clipinst = args.inst
     # LS1.Local_Search(G, args.time)
-    outputsol = '%s_%s_%s.sol' % (clipinst.split("/")[-1], args.alg,str(int(args.time)))
-    outputtrace = '%s_%s_%s.trace' % (clipinst.split("/")[-1], args.alg,str(int(args.time)))
+    outputsol = '%s_%s_%s.sol' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)))
+    outputtrace = '%s_%s_%s.trace' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)))
     bnb_run.bnb_main(G, args.time, outputsol, outputtrace)
     # print outpath + outputsol
     # output1 = open(outpath + outputsol,'w')
@@ -65,8 +65,8 @@ elif (args.alg == 'Approx'):
     # sys.exit('Error')
     clipinst = args.inst
     sol,trace = approx.MVC_approx(G)
-    outputsol = '%s_%s.sol' % (clipinst.split("/")[-1], args.alg)
-    outputtrace = '%s_%s.trace' % (clipinst.split("/")[-1], args.alg)
+    outputsol = '%s_%s.sol' % (clipinst.split("/")[-1][:-6], args.alg)
+    outputtrace = '%s_%s.trace' % (clipinst.split("/")[-1][:-6], args.alg)
     output1 = open(outpath + outputsol,'w')
     output1.write(str(len(sol))+"\n")
     solstring = ""
@@ -82,8 +82,8 @@ elif (args.alg =='LS1'):
     clipinst = args.inst
     # LS1.Local_Search(G, args.time)
     sol,trace = LS1.Local_Search(G, args.time)
-    outputsol = '%s_%s_%s_%s.sol' % (clipinst.split("/")[-1], args.alg,str(int(args.time)),str(int(args.seed)))
-    outputtrace = '%s_%s_%s_%s.trace' % (clipinst.split("/")[-1], args.alg,str(int(args.time)),str(int(args.seed)))
+    outputsol = '%s_%s_%s_%s.sol' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)),str(int(args.seed)))
+    outputtrace = '%s_%s_%s_%s.trace' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)),str(int(args.seed)))
     print outpath + outputsol
     output1 = open(outpath + outputsol,'w')
     # output1.write(str(len(sol))+"\n")
@@ -97,8 +97,8 @@ elif (args.alg == 'LS2'):
     clipinst = args.inst
     # LS1.Local_Search(G, args.time)
     sol,trace = LS2.Local_Search(G, args.time)
-    outputsol = '%s_%s_%s_%s.sol' % (clipinst.split("/")[-1], args.alg,str(int(args.time)),str(int(args.seed)))
-    outputtrace = '%s_%s_%s_%s.trace' % (clipinst.split("/")[-1], args.alg,str(int(args.time)),str(int(args.seed)))
+    outputsol = '%s_%s_%s_%s.sol' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)),str(int(args.seed)))
+    outputtrace = '%s_%s_%s_%s.trace' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)),str(int(args.seed)))
     output1 = open(outpath + outputsol,'w')
     # output1.write(str(len(sol))+"\n")
     output1.write(sol)
