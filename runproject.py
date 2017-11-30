@@ -18,7 +18,7 @@ Note that only the first two parameters are required for each algorithm
 # note that these will need to be changed for your directories
 
 # inpath = os.getcwd() + '/'
-outpath = os.getcwd() + '/results/'
+outpath = os.getcwd() + "/"
 #inpath = "/Users/Alex/Dropbox/College/Fall 2017/CSE 6140/project/Np-Complete_Vertex_Cover/"
 #outpath = "/Users/Alex/Dropbox/College/Fall 2017/CSE 6140/project/Np-Complete_Vertex_Cover/results/"
 
@@ -72,7 +72,7 @@ elif (args.alg == 'Approx'):
     solstring = ""
     for i in sol:
         solstring += str(i) + ","
-    output1.write(solstring)
+    output1.write(solstring[:-1])
     output1.close()
     output2 = open(outpath + outputtrace,'w')
     output2.write(trace)
