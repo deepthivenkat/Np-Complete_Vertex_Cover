@@ -51,15 +51,18 @@ if (args.alg == 'BnB'):
     # LS1.Local_Search(G, args.time)
     outputsol = '%s_%s_%s.sol' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)))
     outputtrace = '%s_%s_%s.trace' % (clipinst.split("/")[-1][:-6], args.alg,str(int(args.time)))
-    bnb_run.bnb_main(G, args.time, outputsol, outputtrace)
+    sol, trace = bnb_run.bnb_main(G, args.time, outputsol, outputtrace)
     # print outpath + outputsol
-    # output1 = open(outpath + outputsol,'w')
-    # # output1.write(str(len(sol))+"\n")
-    # output1.write(sol)
-    # output1.close()
-    # output2 = open(outpath + outputtrace,'w')
-    # output2.write(trace)
-    # output2.close()    
+    output1 = open(outpath + outputsol,'w')
+    output1.write(str(len(sol))+"\n")
+    sol = [str(item) for item in sol]
+    output1.write(",".join(sol))
+    output1.close()
+    output2 = open(outpath + outputtrace,'w')
+    for line in trace:
+        output2.write(line)
+        output2.write("\n")
+    output2.close()
 
 elif (args.alg == 'Approx'):
     # sys.exit('Error')
