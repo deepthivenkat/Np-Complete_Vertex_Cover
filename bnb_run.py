@@ -41,20 +41,13 @@ bnb: Main body of the algorithm.
 Inputs: v: node number of the original graph. index: the first node index of the sub-graph in a recursion
 result: partial result for the sub-graph. thisG: the sub-graph. minSoFar: temporary final result list.
 startTime: start time used in timing. timeOut: user input to decide when to exit. outputFile/traceFile: user input of files.
-'''   
-def bnb(thisG, sol,trace,timeOut=600, index=1, result=[], minSoFar=None, startTime=time()):
-    v, minSoFar = len(thisG.nodes()), thisG.nodes()
-    outputFile = sol
+'''
+
+def bnb(v, index, result, thisG, minSoFar, startTime, timeOut, trace):
+
     # if timeout, output and exit.
     if time() - startTime > timeOut:
-        # return str(len(minSoFar))+"\n" + ",".join(map(lambda x : str(x), minSoFar)), ret_str
-        outputFile.write(str(len(minSoFar)))
-        outputFile.write("\n")
-        outputFile.write(",".join(map(lambda x : str(x), minSoFar)))
-        outputFile.write("\n")
         raise RuntimeError
-
-    traceFile = trace
 
     # prune this branch of reach the lower bound
     if len(result) + LowerBound(thisG) >= len(minSoFar):
@@ -65,9 +58,8 @@ def bnb(thisG, sol,trace,timeOut=600, index=1, result=[], minSoFar=None, startTi
         for i in result:
             minSoFar.append(i)
         # trace it in the output files
-        traceFile.write(("%.2f" % (time() - startTime)) + "," + str(len(minSoFar)))
-        traceFile.write("\n")
-        # ret_str += ("%.2f" % (time() - startTime)) + "," + str(len(minSoFar)) + "\n"
+        print (("%.2f" % (time() - startTime)) + "," + str(len(minSoFar)))
+        trace.append(("%.2f" % (time() - startTime)) + "," + str(len(minSoFar)))
         return
 
     # further our result to all nest node
@@ -79,24 +71,22 @@ def bnb(thisG, sol,trace,timeOut=600, index=1, result=[], minSoFar=None, startTi
         result.append(i)
         tempG = deepcopy(thisG)
         tempG.remove_node(i)
-        # bnb(v, i + 1, result, tempG, minSoFar, startTime, timeOut)
-        bnb(tempG,  sol, trace,timeOut, i+1, result, minSoFar, startTime)
+        bnb(v, i + 1, result, tempG, minSoFar, startTime, timeOut, trace)
         del result[-1]
 
 def bnb_main(G,cutoff, outputSolFileName, outputTraceFileName):
-    outpath = os.getcwd() + '/results/'
-    with open(outpath+outputSolFileName, "w") as outputFile:
-        with open(outpath+outputTraceFileName, "w") as traceFile:
-            try:
-                bnb(G, outputFile, traceFile,cutoff, 1,[],G.nodes(),time())
-                outputSolFile.write(str(len(minSoFar)))
-                outputSolFile.write("\n")
-                outputSolFile.write(",".join(map(lambda x : str(x), minSoFar)))
-                outputSolFile.write("\n")
-            except RuntimeError:
-                print "Timeout. Returned best solution so far."
-    traceFile.close()
-    outputFile.close()
+    trace = []
+    minSoFar = G.nodes()
+    v = len(minSoFar)
+    index = 1
+    result = []
+    timeOut = cutoff
+    startTime = time()
+    try:
+        bnb(v, index, result, G, minSoFar, startTime, timeOut, trace)
+    except RuntimeError:
+        print "Timeout. Returned best solution so far."
+    return minSoFar, trace
 
     
     
