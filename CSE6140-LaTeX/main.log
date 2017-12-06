@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 DEC 2017 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 DEC 2017 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1077,12 +1077,307 @@ LaTeX Warning: Text page 5 contains only floats.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 217.
  [7.7] [8.8]
+Package epstopdf Info: Source file: <../graph/power-QRTD-LS1.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 22615 bytes
+(epstopdf)             Output file: <../graph/power-QRTD-LS1-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=../graph/power-QRTD-LS1-ep
+s-converted-to.pdf ../graph/power-QRTD-LS1.eps>
+(epstopdf)             \includegraphics on input line 248.
+runsystem(repstopdf --outfile=../graph/power-QRTD-LS1-eps-converted-to.pdf ../g
+raph/power-QRTD-LS1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/power-QRTD-LS1-eps-converted-to.p
+df>.
+
+
+! Package pdftex.def Error: File `../graph/power-QRTD-LS1-eps-converted-to.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.248 ...[height=7cm]{../graph/power-QRTD-LS1.eps}
+                                                  
+? 
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 248.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zi4' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `textendash ' is missing
+(microtype)             in font `T1/zi4/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textemdash ' is missing
+(microtype)             in font `T1/zi4/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 248--249
+[][] 
+ []
+
+Package epstopdf Info: Source file: <../graph/power-SQD-LS1.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 23043 bytes
+(epstopdf)             Output file: <../graph/power-SQD-LS1-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=../graph/power-SQD-LS1-eps
+-converted-to.pdf ../graph/power-SQD-LS1.eps>
+(epstopdf)             \includegraphics on input line 253.
+runsystem(repstopdf --outfile=../graph/power-SQD-LS1-eps-converted-to.pdf ../gr
+aph/power-SQD-LS1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/power-SQD-LS1-eps-converted-to.pd
+f>.
+
+! Package pdftex.def Error: File `../graph/power-SQD-LS1-eps-converted-to.pdf' 
+not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 ...s[height=7cm]{../graph/power-SQD-LS1.eps}
+                                                  
+? 
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 253--254
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <../graph/power-QRTD-LS2.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 23492 bytes
+(epstopdf)             Output file: <../graph/power-QRTD-LS2-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=../graph/power-QRTD-LS2-ep
+s-converted-to.pdf ../graph/power-QRTD-LS2.eps>
+(epstopdf)             \includegraphics on input line 261.
+runsystem(repstopdf --outfile=../graph/power-QRTD-LS2-eps-converted-to.pdf ../g
+raph/power-QRTD-LS2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/power-QRTD-LS2-eps-converted-to.p
+df>.
+
+! Package pdftex.def Error: File `../graph/power-QRTD-LS2-eps-converted-to.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.261 ...[height=7cm]{../graph/power-QRTD-LS2.eps}
+                                                  
+? 
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 261--262
+[][] 
+ []
+
+Package epstopdf Info: Source file: <../graph/power-SQD-LS2.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 23258 bytes
+(epstopdf)             Output file: <../graph/power-SQD-LS2-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=../graph/power-SQD-LS2-eps
+-converted-to.pdf ../graph/power-SQD-LS2.eps>
+(epstopdf)             \includegraphics on input line 266.
+runsystem(repstopdf --outfile=../graph/power-SQD-LS2-eps-converted-to.pdf ../gr
+aph/power-SQD-LS2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/power-SQD-LS2-eps-converted-to.pd
+f>.
+
+! Package pdftex.def Error: File `../graph/power-SQD-LS2-eps-converted-to.pdf' 
+not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...s[height=7cm]{../graph/power-SQD-LS2.eps}
+                                                  
+? 
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 266--267
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <../graph/star2-QRTD-LS1.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 23050 bytes
+(epstopdf)             Output file: <../graph/star2-QRTD-LS1-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=../graph/star2-QRTD-LS1-ep
+s-converted-to.pdf ../graph/star2-QRTD-LS1.eps>
+(epstopdf)             \includegraphics on input line 274.
+runsystem(repstopdf --outfile=../graph/star2-QRTD-LS1-eps-converted-to.pdf ../g
+raph/star2-QRTD-LS1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/star2-QRTD-LS1-eps-converted-to.p
+df>.
+
+! Package pdftex.def Error: File `../graph/star2-QRTD-LS1-eps-converted-to.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 ...[height=7cm]{../graph/star2-QRTD-LS1.eps}
+                                                  
+? 
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 274--275
+[][] 
+ []
+
+Package epstopdf Info: Source file: <../graph/star2-SQD-LS1.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 21909 bytes
+(epstopdf)             Output file: <../graph/star2-SQD-LS1-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=../graph/star2-SQD-LS1-eps
+-converted-to.pdf ../graph/star2-SQD-LS1.eps>
+(epstopdf)             \includegraphics on input line 279.
+runsystem(repstopdf --outfile=../graph/star2-SQD-LS1-eps-converted-to.pdf ../gr
+aph/star2-SQD-LS1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/star2-SQD-LS1-eps-converted-to.pd
+f>.
+
+! Package pdftex.def Error: File `../graph/star2-SQD-LS1-eps-converted-to.pdf' 
+not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 ...s[height=7cm]{../graph/star2-SQD-LS1.eps}
+                                                  
+? 
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 279--280
+ [][] 
+ []
+
+[9.9]
+Package epstopdf Info: Source file: <../graph/star2-QRTD-LS2.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 23047 bytes
+(epstopdf)             Output file: <../graph/star2-QRTD-LS2-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=../graph/star2-QRTD-LS2-ep
+s-converted-to.pdf ../graph/star2-QRTD-LS2.eps>
+(epstopdf)             \includegraphics on input line 287.
+runsystem(repstopdf --outfile=../graph/star2-QRTD-LS2-eps-converted-to.pdf ../g
+raph/star2-QRTD-LS2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/star2-QRTD-LS2-eps-converted-to.p
+df>.
+
+
+! Package pdftex.def Error: File `../graph/star2-QRTD-LS2-eps-converted-to.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 ...[height=7cm]{../graph/star2-QRTD-LS2.eps}
+                                                  
+? 
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 287--288
+[][] 
+ []
+
+Package epstopdf Info: Source file: <../graph/star2-SQD-LS2.eps>
+(epstopdf)                    date: 2017-12-05 18:41:22
+(epstopdf)                    size: 23277 bytes
+(epstopdf)             Output file: <../graph/star2-SQD-LS2-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=../graph/star2-SQD-LS2-eps
+-converted-to.pdf ../graph/star2-SQD-LS2.eps>
+(epstopdf)             \includegraphics on input line 292.
+runsystem(repstopdf --outfile=../graph/star2-SQD-LS2-eps-converted-to.pdf ../gr
+aph/star2-SQD-LS2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <../graph/star2-SQD-LS2-eps-converted-to.pd
+f>.
+
+! Package pdftex.def Error: File `../graph/star2-SQD-LS2-eps-converted-to.pdf' 
+not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 ...s[height=7cm]{../graph/star2-SQD-LS2.eps}
+                                                  
+? 
+
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 292--293
+ [][] 
+ []
+
+<../graph/powerls1.png, id=194, 1417.295pt x 774.895pt>
+File: ../graph/powerls1.png Graphic file (type png)
+
+<use ../graph/powerls1.png>
+Package pdftex.def Info: ../graph/powerls1.png used on input line 300.
+(pdftex.def)             Requested size: 364.2709pt x 199.16928pt.
+
+Overfull \hbox (183.35567pt too wide) in paragraph at lines 300--301
+[][] 
+ []
+
+<../graph/powerls2.png, id=196, 1501.61pt x 752.8125pt>
+File: ../graph/powerls2.png Graphic file (type png)
+
+<use ../graph/powerls2.png>
+Package pdftex.def Info: ../graph/powerls2.png used on input line 305.
+(pdftex.def)             Requested size: 397.2832pt x 199.16928pt.
+
+Overfull \hbox (216.36797pt too wide) in paragraph at lines 305--306
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10.10]
+
+! LaTeX Error: File `../graph/star2ls1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 ...degraphics[height=7cm]{../graph/star2ls1}
+                                                  
+? 
+
+! LaTeX Error: File `../graph/star2ls2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 ...degraphics[height=7cm]{../graph/star2ls2}
+                                                  
+? 
 No file main.bbl.
 )
 
 Package natbib Warning: There were undefined citations.
 
-[9.9]
+[11.11 <../graph/powerls1.png> <../graph/powerls2.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (./main.aux)
@@ -1090,44 +1385,50 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 920D58BD2455B532A9E90846087C6E7B;3336.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 19054 strings out of 493089
- 286574 string characters out of 6134842
+ 19119 strings out of 493089
+ 287502 string characters out of 6134842
  427785 words of memory out of 5000000
- 21700 multiletter control sequences out of 15000+600000
- 169586 words of font info for 302 fonts, out of 8000000 for 9000
+ 21726 multiletter control sequences out of 15000+600000
+ 169885 words of font info for 303 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,18n,94p,955b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{
-/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr
-/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{/usr/
-local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/l
-ocal/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/lo
-cal/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/201
-5/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2015
-/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/local/texlive/2015/
-texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}</usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-5letters.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on main.pdf (9 pages, 523015 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/u
+sr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/us
+r/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/lo
+cal/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{/usr/loc
+al/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/loca
+l/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local
+/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2015/t
+exmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2015/te
+xmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/local/texlive/2015/tex
+mf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}</usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTI
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-5letter
+s.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-7lette
+rs.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
+Output written on main.pdf (11 pages, 602286 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 49326 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 49848 words of extra memory for PDF output out of 51595 (max. 10000000)
 
