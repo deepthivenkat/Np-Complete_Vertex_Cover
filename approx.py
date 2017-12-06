@@ -1,6 +1,15 @@
 import time
 import networkx as nx
 
+'''
+This file holds the approximation algorithm for finding minimum vertex covers of graphs.
+It creates a copy of the graph given (in networkx format) then picks an arbitrary edge of the graph
+and adds it to the MVC. 
+It then removes all adjacent edges to the above edge from the graph and continues this process.
+
+This returns the MVC as a set C and a string that contains the trace file values.
+'''
+
 def MVC_approx(G):
     Gprime = G.copy()
     C = []
@@ -19,4 +28,3 @@ def MVC_approx(G):
 
     return C, stringval
 
-# maybe rewrite to find the edge with most neighbors?
