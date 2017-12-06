@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 DEC 2017 23:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 DEC 2017 23:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,13 +1061,13 @@ Package pdftex.def Info: tree.pdf used on input line 101.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 102.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 210.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.3pt on input line 185.
+(Font)              scaled to size 7.3pt on input line 210.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 185.
+(Font)              scaled to size 6.2pt on input line 210.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 6.2pt on input line 185.
+(Font)              scaled to size 6.2pt on input line 210.
 
 [4.4]
 
@@ -1075,7 +1075,7 @@ LaTeX Warning: Text page 5 contains only floats.
 
 [5.5 <./tree.pdf>] [6.6]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 217.
+(Font)              scaled to size 10.0pt on input line 242.
  [7.7] [8.8]
 Package epstopdf Info: Source file: <../graph/power-QRTD-LS1.eps>
 (epstopdf)                    date: 2017-12-05 18:41:22
@@ -1084,7 +1084,7 @@ Package epstopdf Info: Source file: <../graph/power-QRTD-LS1.eps>
 df>
 (epstopdf)             Command: <repstopdf --outfile=../graph/power-QRTD-LS1-ep
 s-converted-to.pdf ../graph/power-QRTD-LS1.eps>
-(epstopdf)             \includegraphics on input line 248.
+(epstopdf)             \includegraphics on input line 273.
 runsystem(repstopdf --outfile=../graph/power-QRTD-LS1-eps-converted-to.pdf ../g
 raph/power-QRTD-LS1.eps)...executed safely (allowed).
 
@@ -1099,10 +1099,10 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.248 ...[height=7cm]{../graph/power-QRTD-LS1.eps}
+l.273 ...[height=7cm]{../graph/power-QRTD-LS1.eps}
                                                   
 ? 
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 248.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 273.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
@@ -1117,7 +1117,7 @@ Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 248--249
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 273--274
 [][] 
  []
 
@@ -1128,7 +1128,7 @@ Package epstopdf Info: Source file: <../graph/power-SQD-LS1.eps>
 f>
 (epstopdf)             Command: <repstopdf --outfile=../graph/power-SQD-LS1-eps
 -converted-to.pdf ../graph/power-SQD-LS1.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 278.
 runsystem(repstopdf --outfile=../graph/power-SQD-LS1-eps-converted-to.pdf ../gr
 aph/power-SQD-LS1.eps)...executed safely (allowed).
 
@@ -1142,11 +1142,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.253 ...s[height=7cm]{../graph/power-SQD-LS1.eps}
+l.278 ...s[height=7cm]{../graph/power-SQD-LS1.eps}
                                                   
 ? 
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 253--254
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 278--279
  [][] 
  []
 
@@ -1157,7 +1157,7 @@ Package epstopdf Info: Source file: <../graph/power-QRTD-LS2.eps>
 df>
 (epstopdf)             Command: <repstopdf --outfile=../graph/power-QRTD-LS2-ep
 s-converted-to.pdf ../graph/power-QRTD-LS2.eps>
-(epstopdf)             \includegraphics on input line 261.
+(epstopdf)             \includegraphics on input line 286.
 runsystem(repstopdf --outfile=../graph/power-QRTD-LS2-eps-converted-to.pdf ../g
 raph/power-QRTD-LS2.eps)...executed safely (allowed).
 
@@ -1171,11 +1171,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.261 ...[height=7cm]{../graph/power-QRTD-LS2.eps}
+l.286 ...[height=7cm]{../graph/power-QRTD-LS2.eps}
                                                   
 ? 
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 261--262
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 286--287
 [][] 
  []
 
@@ -1186,7 +1186,7 @@ Package epstopdf Info: Source file: <../graph/power-SQD-LS2.eps>
 f>
 (epstopdf)             Command: <repstopdf --outfile=../graph/power-SQD-LS2-eps
 -converted-to.pdf ../graph/power-SQD-LS2.eps>
-(epstopdf)             \includegraphics on input line 266.
+(epstopdf)             \includegraphics on input line 291.
 runsystem(repstopdf --outfile=../graph/power-SQD-LS2-eps-converted-to.pdf ../gr
 aph/power-SQD-LS2.eps)...executed safely (allowed).
 
@@ -1200,14 +1200,18 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.266 ...s[height=7cm]{../graph/power-SQD-LS2.eps}
+l.291 ...s[height=7cm]{../graph/power-SQD-LS2.eps}
                                                   
 ? 
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 266--267
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 291--292
  [][] 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9.9]
 Package epstopdf Info: Source file: <../graph/star2-QRTD-LS1.eps>
 (epstopdf)                    date: 2017-12-05 18:41:22
 (epstopdf)                    size: 23050 bytes
@@ -1215,12 +1219,13 @@ Package epstopdf Info: Source file: <../graph/star2-QRTD-LS1.eps>
 df>
 (epstopdf)             Command: <repstopdf --outfile=../graph/star2-QRTD-LS1-ep
 s-converted-to.pdf ../graph/star2-QRTD-LS1.eps>
-(epstopdf)             \includegraphics on input line 274.
+(epstopdf)             \includegraphics on input line 299.
 runsystem(repstopdf --outfile=../graph/star2-QRTD-LS1-eps-converted-to.pdf ../g
 raph/star2-QRTD-LS1.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <../graph/star2-QRTD-LS1-eps-converted-to.p
 df>.
+
 
 ! Package pdftex.def Error: File `../graph/star2-QRTD-LS1-eps-converted-to.pdf'
  not found.
@@ -1229,11 +1234,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.274 ...[height=7cm]{../graph/star2-QRTD-LS1.eps}
+l.299 ...[height=7cm]{../graph/star2-QRTD-LS1.eps}
                                                   
 ? 
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 274--275
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 299--300
 [][] 
  []
 
@@ -1244,7 +1249,7 @@ Package epstopdf Info: Source file: <../graph/star2-SQD-LS1.eps>
 f>
 (epstopdf)             Command: <repstopdf --outfile=../graph/star2-SQD-LS1-eps
 -converted-to.pdf ../graph/star2-SQD-LS1.eps>
-(epstopdf)             \includegraphics on input line 279.
+(epstopdf)             \includegraphics on input line 304.
 runsystem(repstopdf --outfile=../graph/star2-SQD-LS1-eps-converted-to.pdf ../gr
 aph/star2-SQD-LS1.eps)...executed safely (allowed).
 
@@ -1258,15 +1263,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.279 ...s[height=7cm]{../graph/star2-SQD-LS1.eps}
+l.304 ...s[height=7cm]{../graph/star2-SQD-LS1.eps}
                                                   
 ? 
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 279--280
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 304--305
  [][] 
  []
 
-[9.9]
 Package epstopdf Info: Source file: <../graph/star2-QRTD-LS2.eps>
 (epstopdf)                    date: 2017-12-05 18:41:22
 (epstopdf)                    size: 23047 bytes
@@ -1274,13 +1278,12 @@ Package epstopdf Info: Source file: <../graph/star2-QRTD-LS2.eps>
 df>
 (epstopdf)             Command: <repstopdf --outfile=../graph/star2-QRTD-LS2-ep
 s-converted-to.pdf ../graph/star2-QRTD-LS2.eps>
-(epstopdf)             \includegraphics on input line 287.
+(epstopdf)             \includegraphics on input line 312.
 runsystem(repstopdf --outfile=../graph/star2-QRTD-LS2-eps-converted-to.pdf ../g
 raph/star2-QRTD-LS2.eps)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <../graph/star2-QRTD-LS2-eps-converted-to.p
 df>.
-
 
 ! Package pdftex.def Error: File `../graph/star2-QRTD-LS2-eps-converted-to.pdf'
  not found.
@@ -1289,11 +1292,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 ...[height=7cm]{../graph/star2-QRTD-LS2.eps}
+l.312 ...[height=7cm]{../graph/star2-QRTD-LS2.eps}
                                                   
 ? 
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 287--288
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 312--313
 [][] 
  []
 
@@ -1304,7 +1307,7 @@ Package epstopdf Info: Source file: <../graph/star2-SQD-LS2.eps>
 f>
 (epstopdf)             Command: <repstopdf --outfile=../graph/star2-SQD-LS2-eps
 -converted-to.pdf ../graph/star2-SQD-LS2.eps>
-(epstopdf)             \includegraphics on input line 292.
+(epstopdf)             \includegraphics on input line 317.
 runsystem(repstopdf --outfile=../graph/star2-SQD-LS2-eps-converted-to.pdf ../gr
 aph/star2-SQD-LS2.eps)...executed safely (allowed).
 
@@ -1318,33 +1321,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.292 ...s[height=7cm]{../graph/star2-SQD-LS2.eps}
+l.317 ...s[height=7cm]{../graph/star2-SQD-LS2.eps}
                                                   
 ? 
 
-Overfull \hbox (18.26501pt too wide) in paragraph at lines 292--293
- [][] 
- []
-
-<../graph/powerls1.png, id=194, 1417.295pt x 774.895pt>
-File: ../graph/powerls1.png Graphic file (type png)
-
-<use ../graph/powerls1.png>
-Package pdftex.def Info: ../graph/powerls1.png used on input line 300.
-(pdftex.def)             Requested size: 364.2709pt x 199.16928pt.
-
-Overfull \hbox (183.35567pt too wide) in paragraph at lines 300--301
-[][] 
- []
-
-<../graph/powerls2.png, id=196, 1501.61pt x 752.8125pt>
-File: ../graph/powerls2.png Graphic file (type png)
-
-<use ../graph/powerls2.png>
-Package pdftex.def Info: ../graph/powerls2.png used on input line 305.
-(pdftex.def)             Requested size: 397.2832pt x 199.16928pt.
-
-Overfull \hbox (216.36797pt too wide) in paragraph at lines 305--306
+Overfull \hbox (18.26501pt too wide) in paragraph at lines 317--318
  [][] 
  []
 
@@ -1352,32 +1333,46 @@ Overfull \hbox (216.36797pt too wide) in paragraph at lines 305--306
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10.10]
+<../graph/powerls1.png, id=202, 1417.295pt x 774.895pt>
+File: ../graph/powerls1.png Graphic file (type png)
 
-! LaTeX Error: File `../graph/star2ls1' not found.
+<use ../graph/powerls1.png>
+Package pdftex.def Info: ../graph/powerls1.png used on input line 324.
+(pdftex.def)             Requested size: 364.2709pt x 199.16928pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.313 ...degraphics[height=7cm]{../graph/star2ls1}
-                                                  
-? 
+<../graph/powerls2.png, id=204, 1501.61pt x 752.8125pt>
+File: ../graph/powerls2.png Graphic file (type png)
 
-! LaTeX Error: File `../graph/star2ls2' not found.
+<use ../graph/powerls2.png>
+Package pdftex.def Info: ../graph/powerls2.png used on input line 329.
+(pdftex.def)             Requested size: 397.2832pt x 199.16928pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.318 ...degraphics[height=7cm]{../graph/star2ls2}
-                                                  
-? 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11.11 <../graph/powerls1.png>] <../graph/starls1.png, id=212, 1367.1075pt x 7
+66.865pt>
+File: ../graph/starls1.png Graphic file (type png)
+
+<use ../graph/starls1.png>
+Package pdftex.def Info: ../graph/starls1.png used on input line 335.
+(pdftex.def)             Requested size: 355.06409pt x 199.16928pt.
+
+<../graph/starls2.png, id=213, 1507.6325pt x 768.8725pt>
+File: ../graph/starls2.png Graphic file (type png)
+
+<use ../graph/starls2.png>
+Package pdftex.def Info: ../graph/starls2.png used on input line 340.
+(pdftex.def)             Requested size: 390.52592pt x 199.16928pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12.12 <../graph/powerls2.png> <../graph/starls1.png>]
 No file main.bbl.
 )
 
 Package natbib Warning: There were undefined citations.
 
-[11.11 <../graph/powerls1.png> <../graph/powerls2.png>]
+[13.13 <../graph/starls2.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (./main.aux)
@@ -1391,10 +1386,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 19119 strings out of 493089
- 287502 string characters out of 6134842
- 427785 words of memory out of 5000000
- 21726 multiletter control sequences out of 15000+600000
+ 19122 strings out of 493089
+ 287728 string characters out of 6134842
+ 430867 words of memory out of 5000000
+ 21735 multiletter control sequences out of 15000+600000
  169885 words of font info for 303 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,18n,94p,955b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1425,10 +1420,10 @@ rs.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
 local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on main.pdf (11 pages, 602286 bytes).
+Output written on main.pdf (13 pages, 678818 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 49848 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 49858 words of extra memory for PDF output out of 51595 (max. 10000000)
 
