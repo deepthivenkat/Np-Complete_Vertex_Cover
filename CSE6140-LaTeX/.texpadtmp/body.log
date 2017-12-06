@@ -1,0 +1,301 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.5.24)  5 DEC 2017 19:33
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**body.tex
+(./body.tex
+./body.tex:1: Undefined control sequence.
+l.1 \section
+            {Introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:2: Undefined control sequence.
+l.2 ...s based on protein domain information \cite
+                                                  {abu2004kernelization} or ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:4: Undefined control sequence.
+l.4 \subsection
+               {Approximation Algorithm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:7: Undefined control sequence.
+l.7 \subsection
+               {Local Search}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:10: Undefined control sequence.
+l.10 \subsection
+                {Branch and Bound}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:13: Undefined control sequence.
+l.13 \section
+             {Problem}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+./body.tex:16: Undefined control sequence.
+l.16 \section
+             {Related Work}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:18: Undefined control sequence.
+l.18 \section
+             {Algorithms}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:19: Undefined control sequence.
+l.19 \subsection
+                {Approximation Algorithm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:22: Undefined control sequence.
+l.22 \begin
+           {algorithm}[ht]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:23: Undefined control sequence.
+l.23 \SetAlgoNoLine
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:24: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \mskip 
+\;->\mskip 
+           \thickmuskip 
+l.24 $C = \{ \}$\;
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./body.tex:25: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   ^
+l.25 $E^
+        {\prime}= E$\;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./body.tex:25: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \mskip 
+\;->\mskip 
+           \thickmuskip 
+l.25 $E^{\prime}= E$\;
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./body.tex:26: Undefined control sequence.
+l.26 \While
+           {$E^{\prime}$ is not empty}{remove $e$ in $E^{\prime}$ and add it...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:26: Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+l.26 \While{$
+             E^{\prime}$ is not empty}{remove $e$ in $E^{\prime}$ and add it...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./body.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   ^
+l.26 \While{$E^
+               {\prime}$ is not empty}{remove $e$ in $E^{\prime}$ and add it...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./body.tex:26: Too many }'s.
+l.26 \While{$E^{\prime}$ is not empty}
+                                      {remove $e$ in $E^{\prime}$ and add it...
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+./body.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \mskip 
+\;->\mskip 
+           \thickmuskip 
+l.26 ...in $E^{\prime}$ and add its nodes to $C$\;
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./body.tex:27: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   ^
+l.27 		remove all edges neighboring $e$ from $E^
+                                                {\prime}$\;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./body.tex:27: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \mskip 
+\;->\mskip 
+           \thickmuskip 
+l.27 ... edges neighboring $e$ from $E^{\prime}$\;
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./body.tex:28: Extra }, or forgotten $.
+l.28 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./body.tex:30: Undefined control sequence.
+l.30 \caption
+             {MVC Approx($G$)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:30: Missing } inserted.
+<inserted text> 
+                }
+<to be read again> 
+                   $
+l.30 \caption{MVC Approx($
+                          G$)}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./body.tex:30: Extra }, or forgotten $.
+l.30 \caption{MVC Approx($G$)}
+                              
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./body.tex:31: Undefined control sequence.
+l.31 \label
+           {alg:one}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./body.tex:32: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \end 
+l.32 \end
+         {algorithm}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (219.40718pt too wide) in paragraph at lines 22--32
+[]\tenrm algorithm[ht] $\teni C \tenrm = \tensy fg$$ $\tenrm E$[] = \teni E$$ []$\tenrm E$[]$ is not emp-tyre-move $\teni e$ \tenrm in $\teni E[]$ \tenrm and add its nodes to $\teni C$$ removealledgesneighboring$\tenrm e$\teni from$\tenrm E$[]$$ \teni return$\tenrm C$ []$G$)[]$ |
+
+\hbox(7.51782+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm a
+.\tenrm l
+.\tenrm g
+.\tenrm o
+.etc.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 26 ({)
+### bottom level</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "/Users/Alex/Dropbox/College/Fall 2017/CSE 6140/project/Np-Complete_Vertex_Cover/CSE6140-LaTeX/.texpadtmp/body.pdf" (1 page, 53334 bytes).
+PDF statistics:
+ 24 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
