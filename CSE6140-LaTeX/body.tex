@@ -147,28 +147,24 @@ Power        & 2203 & 3788    & 16.96    & 0.72  \\ \bottomrule
 \subsection{Local Search}
 See Table \ref{tab2} for comprehensive evaluation for local search algorithms. We can see fromTable \ref{tab2} that VC can be obtained by increasing the number of iterations for larger graphs if $k=\frac{\left| V \right|}{2}$.
 \begin{table}[htb]
-\caption{Comprehensive evaluation table for local search I}
+\caption{Comprehensive evaluation table for local search II}
 \label{tab2}
 \begin{minipage}{\columnwidth}
 \begin{center}
-\begin{tabular}{@{}llllllll@{}}
+\begin{tabular}{@{}lllll@{}}
 \toprule
-Instance      & \multicolumn{4}{l}{For K = |V|/2}                                             & \multicolumn{3}{l}{For K=|V|} \\ 
-              & Iters No. & Time   & VC  & Quality if VC not obtained in \textless 1000 iters & Iters No.   & Time     & VC   \\ \midrule
-karate        & 937       & 0.36   & 14  & Obtained                                           & 983         & 0.38     & 14   \\ \midrule
-football      & 952       & 3.04   & 99  & Obtained                                           & 1000        & 3.12     & 101  \\
-              &           &        &     &                                                    & 2000        & 6.94     & 99   \\ \midrule
-jazz          & 973       & 10.78  & 164 & Obtained                                           & 1000        & 11.67    & 182  \\
-              &           &        &     &                                                    & 2000        & 24.91    & 175  \\
-              &           &        &     &                                                    & 3000        & 37.15    & 175  \\
-              &           &        &     &                                                    & 4000        & 51.93    & 170  \\
-              &           &        &     &                                                    & 5000        & 65.99    & 169  \\ \midrule
-delaunay\_n10 & 1000      & 125.32 & 720 & 2996/3056                                          & 1000        & 100.32   & 972  \\
-              & 2000      & 244.21 & 774 & 3046/3056                                          & 2000        & 250.99   & 963  \\
-              & 3000      & 374.3  & 783 & 3053/3056                                          & 3000        & 394.77   & 946  \\
-              & 4000      & 511.85 & 787 & 3055/3056                                          & 4000        & 523.76   & 934  \\
-              & 5000      & 620.9  & 785 & 3055/3056                                          & 5000        & 633.29   & 929  \\
-              & 5533      & 678.46 & 784 & Obtained                                           & 6000        & 797.72   & 920  \\ \bottomrule
+Graph       & Opt  & VC obtained & Time & Error  \\ \midrule
+Jazz        & 158  & 160         & .50  & 0.0125 \\
+Karate      & 14   & 14          & 0    & 0      \\
+Football    & 94   & 96          & .66  & 0.02   \\
+As-22july06 & 3303 & 3346        & 89   & 0.01   \\
+Hep-th      & 3926 & 3964        & 39   & 0.009  \\
+Star        & 6909 & 7708        & 556  & 0.11   \\
+Star2       & 4542 & 5068        & 97   & 0.11   \\
+Net Science & 899  & 899         & 0.47 & 0      \\
+Email       & 594  & 620         & 540  & 0.04   \\
+Delaunay    & 703  & 757         & 180  & 0.07   \\
+Power       & 2203 & 2336        & 148  & 0.06   \\ \bottomrule
 \end{tabular}
 \end{center}
 \end{minipage}
