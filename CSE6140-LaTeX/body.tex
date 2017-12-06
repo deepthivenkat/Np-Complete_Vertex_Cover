@@ -148,7 +148,32 @@ Power        & 2203 & 3788    & 17.046:    & 0.72  \\ \bottomrule
 \end{table}
 
 \subsection{Local Search}
-See Table \ref{tab2} for comprehensive evaluation for local search algorithms. We can see fromTable \ref{tab2} that VC can be obtained by increasing the number of iterations for larger graphs if $k=\frac{\left| V \right|}{2}$.
+See Table \ref{tab2_1} and \ref{tab2} for comprehensive evaluation for local search algorithms. We can see from Table \ref{tab2_1} and \ref{tab2} that VC can be obtained by increasing the number of iterations for larger graphs if $k=\frac{\left| V \right|}{2}$.
+
+\begin{table}[htb]
+\caption{Comprehensive evaluation table for local search I}
+\label{tab2_1}
+\begin{minipage}{\columnwidth}
+\begin{center}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Graph       & Opt  & VC obtained & Time  & Error  \\ \midrule
+Jazz        & 158  & 160         & 7.1   & 0.0125 \\
+Karate      & 14   & 18          & 0     & 0.1428 \\
+Football    & 94   & 96          & 0.40  & 0.02   \\
+As-22july06 & 3303 & 13679       & 507   & 3      \\
+Hep-th      & 3926 & 4574        & 557   & 0.165  \\
+Star        & 6909 & 7533        & 588   & 0.09   \\
+Star2       & 4542 & 9444        & 565   & 1.1    \\
+Net Science & 899  & 957         & 3.06  & 0.06   \\
+Email       & 594  & 672         & 41    & 0.116  \\
+Delaunay    & 703  & 750         & 180   & 0.066  \\
+Power       & 2203 & 2649        & 56.89 & .20    \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{minipage}
+\end{table}
+
 \begin{table}[htb]
 \caption{Comprehensive evaluation table for local search II}
 \label{tab2}
