@@ -13,8 +13,6 @@ Branch and bound algorithm derives from backtracking strategy for decision probl
 \section{Problem}
 Consider a graph $G=\left( V,E \right)$.  Formally, a vertex cover ${V}'$ is a subset of $V$ such that for each $\left( u,v \right)\in E$ it follows that either $u\in{V}'$or $v\in{V}'$. This set ${V}’$ is said to cover the edges of $G$. For the project at hand, this problem is further complicated by searching for the smallest possible ${V}’$ that satisfies the above definition. The MVC problem is known to be NP Complete, and as such it requires specialized algorithms such as local search and approximation in order to be solved. 
 
-\section{Related Work}
-TBC
 \section{Algorithms}
 \subsection{Approximation Algorithm}
 As mentioned above, the approximation algorithm works by arbitrarily picking an edge in the graph, adding its nodes to the solution, then removing the edge and all of its neighboring edges from the graph, and repeating this process until all edges have been removed. In pseudocode, this looks like the following:
@@ -33,7 +31,8 @@ return $C$\;
 
 This algorithm is inspired by that found in CLRS Chapter 35. The algorithm works by choosing an edge arbitrarily, then adding its nodes to the solution and removing all edges neighboring said nodes. This is done because the nodes added to the solution now cover all the edges, so they do not need to be considered. By repeating this process until every edge has been removed from the graph, this guarantees that the solution will cover all edges in the graph by design. This algorithm is provably a 2-approximation algorithm, which means that any solution found will be no worse than twice the size of the optimal solution. 
 
-Because of its structuring, it is not particularly complex and thus fast compared to the other algorithm options. But it also does not give exact solutions except for particular cases, which can be disadvantageous depending on the application of it. As seen in the table below, the approximation algorithm runs extremely quickly, but has high relative error. The time complexity for this algorithm, assuming an adjacency list is used to represent the graph, is $\mathcal{O}(V +E)$, where $E$ is the number of edges in a given graph and $V$ is the number of nodes. 
+Because of its structuring, it is not particularly complex and thus fast compared to the other algorithm options. But it also does not give exact solutions except for particular cases, which can be disadvantageous depending on the application of it. As seen in the table below, the approximation algorithm runs extremely quickly, but has high relative error. 
+
 \subsection{Local Search Algorithm I: Initial Solution and approach}
 The local search is capable of traversing two ways:
 
@@ -49,21 +48,19 @@ The local search is capable of traversing two ways:
 {gain(v) := no of edges for each vertex $v \in G$\;
 Circ\_deque\_len = circular deque of length 100\;
 C := ConstructVC(k) // constructs list of size k with vertices sorted according to no of edges incident on them\;
-\While{no\_of\_iterations}{
-no\_of\_iterations <- no\_of\_iterations - 1\;
-Edge\_set = set of edges covered by C\;
+\While{time > cutoff}{
 \If{Edge\_set == total\_no\_of\_edges}{
 Circ\_deque\_len.append(C.length)\;
 \If{length of C is the minimum length in Circ\_deque\_len}{
 Optimal\_soln = C\;}
-remove a random Vertex from C\;
+remove a random Vertex from C and update Edge Set\;
 Continue\;}
 U,V = vertices of a random uncovered edge \;
-Append either U/V to C depending on the number of edges incident on U,V\;
+Append either U/V to C depending on the number of edges incident on U,V and update Edge Set\;
 Return Optimal\_soln or C if Optimal soln is empty\;
 }
 }
-\caption{LocalSearch(G , no\_of\_iterations , k)}
+\caption{LocalSearch(G , cut\_off, seed)}
 \end{algorithm}
 
 Here the maximum impact vertex is the vertex with most edges incident on it. Random uncovered edge is chosen from the set of edges in the graph that do not have any of its vertices on the current iteration of VC. In order to get a guaranteed VC, we can start with initial solution equal to the total number of vertices and the minimum impact vertices are removed. However, for large graphs this can be quite time consuming - for each VC of specific length almost all other possible permutations are tried. Thus the rate at which the VC size decreases is very low. The optimal strategy is to begin with $\frac{\left| V \right|}{2}$ vertices which have the maximum impact which is done in the method ConstructVC. The current iteration vertices list will grow to add more vertices if a VC is not currently found.
@@ -75,16 +72,27 @@ P\left( C,n \right)=\frac{1}{1+{{e}^{\frac{\Delta E}{T}}}}
 
 Where $n$ is the next vertex to be added to current VC vertices. $\Delta E$ is the number of edges additionally covered by adding $n$. $T$ is temperature.
 
+This algorithm is different from the previous algorithm because of the neighbourhood choice. The algorithm makes note of edges $(u,v)$ that have both $u$ and $v$ in VC and attempts to remove one of the vertices from the vertex cover.
+
 \begin{algorithm}[ht]
 \SetAlgoNoLine
+Construct\_VC\_2(K): // function called\;
+Return top K vertices with most edges adjacent on them\;
+//main body\;
 T <- very - high\;
-C <- random\_initial\_soution\;
+K = 0.65 * $|V|$ // Choose about 65\% of all the vertices\;
+C <- Construct\_VC\_2(K)\;
 \While{T}{Monotonically decrease T\;
+\If{VC is not obtained}{
 n <- random\_neigh(C)\;
 Evaluate $\Delta E$\;
 Evaluate $P(C,n)$\;
 Add n to C with probability $P(C,n)$\;}
-\caption{Local Search II}
+\If{VC is obtained}{
+Maintain a list of edges (u,v) such that it has both u and v in the current VC\;
+Randomly remove one of the vertices\;
+}}
+\caption{Local Search(G, cut\_off, seed)}
 \end{algorithm}
 \subsection{Branch and Bound}
 Branch and bound algorithm keeps the best solution found so far and computes a lower bound based on this solution. When a solution node for a sub-problem is worse than the lower bound, we consider it as an unpromising solution node and prune it and all its child nodes. The solution tree represents all the possible solutions. A sample solution tree for a graph with 4 vertices is given below. When we scan through all the nodes, a lower bound is calculated to determine whether a node and its branch is promising or not. If it is not a potential solution, we will skip this branch and continue our scan.
@@ -110,9 +118,6 @@ LB = 0\;
 \caption{Branch and bound}
 \end{algorithm}
 \section{Empirical Evaluation}
-
-For the approximation algorithm as well as the local search 1, all computations were run on a late 2013 15 inch MacBook Pro with 2.3 GHz Intel Core i7 and 16 GB of 1600 MHz DDR3 RAM. 
-
 \subsection{Approximation Algorithm}
 See Table \ref{tab1} for comprehensive evaluation for approximation algorithm.
 \begin{table}[htb]
@@ -124,16 +129,16 @@ See Table \ref{tab1} for comprehensive evaluation for approximation algorithm.
 \toprule
 Graph        & OPT  & Approx. & Time (s) & Error \\ \midrule
 Jazz         & 158  & 186     & 0.094    & 0.18  \\
-Karate       & 14   & 22      & 0.00069  & 0.57  \\
-Football     & 94   & 110     & 0.017    & 0.17  \\
-as-22july06 & 3303 & 6026    & 163.91    & 0.82  \\
-hep-th       & 3926 & 5784    & 51.85    & 0.47  \\
-Star         & 6909 & 10536   & 268.38    & 0.52  \\
-Star2        & 4542 & 6786    & 603.84   & 0.49  \\
-Net Science  & 899  & 1224    & 1.44     & 0.36  \\
-Email        & 594  & 834     & 1.089     & 0.4   \\
-Delaunay     & 703  & 960     & 0.94     & 0.37  \\
-Power        & 2203 & 3788    & 17.046:    & 0.72  \\ \bottomrule
+Karate       & 14   & 22      & 0.00071  & 0.57  \\
+Football     & 94   & 110     & 0.016    & 0.17  \\
+as-22july06 & 3303 & 6026    & 142.5    & 0.82  \\
+hep-th       & 3926 & 5784    & 51.21    & 0.47  \\
+Star         & 6909 & 10536   & 268.7    & 0.52  \\
+Star2        & 4542 & 6786    & 508.59   & 0.49  \\
+Net Science  & 899  & 1224    & 1.53     & 0.36  \\
+Email        & 594  & 834     & 1.17     & 0.4   \\
+Delaunay     & 703  & 960     & 1.03     & 0.37  \\
+Power        & 2203 & 3788    & 16.96    & 0.72  \\ \bottomrule
 \end{tabular}
 \end{center}
 \end{minipage}
@@ -152,8 +157,7 @@ Instance      & \multicolumn{4}{l}{For K = |V|/2}                               
               & Iters No. & Time   & VC  & Quality if VC not obtained in \textless 1000 iters & Iters No.   & Time     & VC   \\ \midrule
 karate        & 937       & 0.36   & 14  & Obtained                                           & 983         & 0.38     & 14   \\ \midrule
 football      & 952       & 3.04   & 99  & Obtained                                           & 1000        & 3.12     & 101  \\
-              &           &        &     &                                                    & 2000        & 6.94     & 99   \\
-              &           &        &     &                                                    & 3000        & 10.36    & 97   \\ \midrule
+              &           &        &     &                                                    & 2000        & 6.94     & 99   \\ \midrule
 jazz          & 973       & 10.78  & 164 & Obtained                                           & 1000        & 11.67    & 182  \\
               &           &        &     &                                                    & 2000        & 24.91    & 175  \\
               &           &        &     &                                                    & 3000        & 37.15    & 175  \\
@@ -171,7 +175,7 @@ delaunay\_n10 & 1000      & 125.32 & 720 & 2996/3056                            
 \end{table}
 
 \subsection{Branch and Bound}
-See Table \ref{tab3} for comprehensive evaluation for branch and bound algorithms.
+See Table \ref{tab3} for comprehensive evaluation for branch and bound algorithms. Intel Core i7-5500U@2.4GHz CPU and 8.00GB RAM are used to run the code.
 \begin{table}[htb]
 \caption{Comprehensive evaluation table for branch and bound algorithm}
 \label{tab3}
@@ -192,15 +196,13 @@ delaunay\_n10.graph & 703 & 68.38  & 798      & 0.135135135 \\ \bottomrule
 \end{table}
 
 \section{Discussion}
-\subsection{Approximation}
-As expected, by design the approximation algorithm was the fastest of the four designed. 
-Additionally, it had the largest overall errors of the algorithms, which relative errors ranging from 17\% to 72\%, which is quite bad all things considered. 
-However, none of the solutions are more than twice that of the optimal solution, so by the standards of an approximation algorithm this one is a success. 
-The quickest computation was for ``karate.graph'', which took 0.69 milliseconds, and the largest computation was for ``star2.graph'' which took 603 seconds to complete.
-This matched the algorithm's expected time complexity as star2 had the largest $V + E$ at 73207, while karate had the smallest at 112.  
-Overall, the implementation of the approximation algorithm was a vanilla one, but nonetheless a successful one.
-If one were to redesign it to be more efficient, one could sacrifice some time by intelligently picking which edge to pull from those that remain such that it has the most adjacent edges. 
-This would increase the time required for the algorithm, as each pass would have to consider all edges remaining and find which has the largest number of adjacent edges, but it would potentially reduce the size of the vertex cover found as it would always remove the most edges possible each iteration. 
+\subsection{Local Search}
+From the algorithm results LS1 performs very well for larger graphs and LS2 performs very well for smaller graphs with lesser number of edges.
+
+The run time of LS1, we maintain an edge set for edges covered by VC and we update it every iteration by inserting new edges or removing a few. Thus the worst case time complexity per iteration for LS1 is $O(|E|)$.
+
+Similarly for LS2, we maintain a hashmap of edges that has both $u$,$v$  in VC. For each iteration the corresponding edges are checked and the hashmap is updated. Thus the time complexity for LS2 is the maximum number of edges that can be incident on a vertex in a graph which is $O(|V|)$
+
 \subsection{Branch and Bound}
 For branch and bound algorithm, time consumption varies with lower bounds, scan orders, and coding strategies and many other characteristics. Analysis of different features are listed below:
 \subsubsection{Lower Bound}
@@ -220,12 +222,15 @@ We also tried different scan orders. Scan order matters because we have to prune
 \item As can be seen in the sample graph, the solution tree is not balanced, which means we can whether scan from the ``heavy'' end or the ``light'' end. With tests on karate.graph, scanning from the ``heavy'' end takes about 570 seconds while starting from the ``light'' end takes about 1080 seconds. We have not reached a reasonable explanation on this result and all our following tests will scan from the ``heavy'' end. One possibility is that scanning from the ``heavy'' end will guarantee to reach a rough solution that can work as a criterion for pruning in the very beginning, while scanning from the ``light'' end will result in scanning through every solution without pruning anything at the start.
 \end{enumerate}
 \subsubsection{Coding Strategies}
-TBC (Further report will concentrate on analysis about different coding strategies. We have implement the branch and bound algorithm in three ways, say, DFS with recursion, DFS with stack, and iteration. Any other implementation and analysis depend on the workload in our final season.)
-\subsubsection{miscellaneous}
-TBC
+Here we concentrate on analysis about different coding strategies. We have implemented the branch and bound algorithm in the following ways, say, DFS with recursion; DFS with stack; iteration method; greedy strategy is also used here and implemented with heap; and I also tried DFS with binary tree.
+\begin{enumerate}
+\item Although other strategies seem more fancy than this one, simply using DFS with recursion is tested to be the fastest among all, even faster than using stack. As we all know, recursion itself is a stack pushing and popping process, so I thought pushing and popping data with our own stack rather than pushing and popping the whole functions may be faster. However, from experiments we sadly found that recursion is faster. This may be because python has its own way to optimize recursion and function calling, while the stack we used is just transformed from a python list. It has the function of stack, but may not perform well.
+\item Greedy strategy is also worth to mention. For every subproblem, we try the most promising vertex first, i.e. the one that covers the most edges in the residual graph. This strategy sounds good, but if it is implemented with heap, then we have to keep the heap for every branch and it costs much time and space to copy and store these heaps. If it is implemented by sorting the left node list in every branch, we know we need and least $O\left( N\log N \right)$ time for every branch. The loss outweighs the gain. But it is still a good strategy if an optimal solution is required, because it usually gives a fairly good approximated solution.
+\item We also tried with binary tree. In this case, the search tree is different from the one we gave in the former section. For every search node has two children: a result including this layer index, or a result excluding this layer index. This is still turned out to be slower than the first one, but it is a good way to parallelize the program.
+\end{enumerate}
 
 \section{Conclusion}
-TBC
+For branch and bound algorithm, unfortunately, even if we rack our brain to prune the branches in the branch and bound algorithm, it still not possible to run large graphs within 10 minutes. In addition, when we implement recursion for large graphs, the program reaches maximum recursion depth. If we use stack for these graphs instead, the computer freezes with memory limitation. As a result, branch and bound algorithm is only useful for small graphs. After all, the time complexity is exponential.
 
 \nocite{*}
 % Bibliography
